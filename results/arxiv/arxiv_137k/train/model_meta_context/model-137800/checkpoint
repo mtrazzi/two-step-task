@@ -1,0 +1,6 @@
+model_checkpoint_path: "model-137800.cptk"
+all_model_checkpoint_paths: "../model-137400/model-137400.cptk"
+all_model_checkpoint_paths: "../model-137500/model-137500.cptk"
+all_model_checkpoint_paths: "../model-137600/model-137600.cptk"
+all_model_checkpoint_paths: "../model-137700/model-137700.cptk"
+all_model_checkpoint_paths: "model-137800.cptk"
