@@ -2,17 +2,17 @@
   <img width="460" height="300" src="results/arxiv/arxiv_40k/train/training_40k_meta_rl.gif">
 </p>
 
-This repository contains three-notebooks aimed at reproducing the two-step task experiments from two papers by Wang et al:
-- [Learning to Reinforcement Learn, 2016](https://arxiv.org/pdf/1611.05763v1.pdf)
-- [Prefrontal cortex as a meta-reinforcement learning system, 2018](https://www.biorxiv.org/content/biorxiv/early/2018/04/13/295964.full.pdf)
+This repository presents our attempt at reproducing the simulations regarding the two-step task as described in the two papers:
+- [Learning to Reinforcement Learn, Wang et al., 2016](https://arxiv.org/pdf/1611.05763v1.pdf)
+- [Prefrontal cortex as a meta-reinforcement learning system, Wang et al., 2018](https://www.biorxiv.org/content/biorxiv/early/2018/04/13/295964.full.pdf)
 
-For a short explanation of the two-step task, see `two-step-task.ipynb`.
+For a short explanation of the two-step task, see [`two-step-task.ipynb`](https://github.com/mtrazzi/two-step-task/blob/master/two-step-task.ipynb).
 
 ## Main Result
 
 We reproduced the plot from [Prefrontal cortex as a meta-reinforcement learning system](https://www.biorxiv.org/content/biorxiv/early/2018/04/13/295964.full.pdf) (Simulation 4, Figure b), on the right). We launched n=8 trainings using different seeds, but with the same hyperparameters as the paper, to compare to the results obtained by Wang et al.
 
-For each seed, the training consisted of 20k episodes of 100 trials (instead of 10k episodes of 100 trials in the paper). The reason for our number of episodes choice is that, in our case, the learning seemed to converge after around ~20k episodes for most seeds, without any significant gap in reward before ~15k episodes.
+For each seed, the training consisted of 20k episodes of 100 trials (instead of 10k episodes of 100 trials in the paper). The reason for our number of episodes choice is that, in our case, the learning seemed to converge after around ~20k episodes for most seeds.
 
 ![reward curve](results/biorxiv/final/reward_curve.png)
 
@@ -38,7 +38,7 @@ The results of our attempt at reproducing the results of "Learning to Reinforcem
 
 For the implementation of the two-step task as descibed in "Prefrontal cortex as a meta-reinforcement learning system", we have included two different implementation:
 - The first one, in `biorxiv-first-try.ipynb` is an interpretation of the experiments where the LSTM is fed actions and rewards both from first and second stage. We saw that the convergence was much slower than in the paper, so we changed our approach.
-- The second implementation, in `biorxiv-final.ipynb`, feeds only actions from first stage and rewards from second stage in the LSTM. Furthermore, the simulation was launched for 8 different seeds, to compare with the plot with eight seeds from the paper. Here, find that our results closely match the results from the paper.
+- The second implementation, in `biorxiv-final.ipynb`, feeds only actions from first stage and rewards from second stage in the LSTM. Furthermore, the simulation was launched for 8 different seeds, to compare with the plot with eight seeds from the paper. We find that our results closely matched the results from the paper.
 
 ## Directory structure
 
@@ -93,6 +93,6 @@ To test the trained model, the `load_model`variable must be set to `True`and the
 
 ## Credits
 
-This is a fork from [awjuliani's Meta-RL implementation](https://github.com/awjuliani/Meta-RL). We used his A3C implementation, but allowing only one thread/worker (so it was equivalent to a single-threaded A2C LSTM). We completely changed the code for the bandits to adapt to the two-step task, while keeping the same API.
+This work uses [awjuliani's Meta-RL implementation](https://github.com/awjuliani/Meta-RL) allowing only one thread/worker (so it was equivalent to a single-threaded A2C LSTM). We completely changed the code for the bandits to adapt to the two-step task, while keeping the same API.
 
-All the code for the plots/gifs were made by us.
+All the code for the plots/gifs is ours.
