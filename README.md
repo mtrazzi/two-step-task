@@ -6,7 +6,7 @@ This repository contains three-notebooks aimed at reproducing the two-step task 
 - [Learning to Reinforcement Learn, 2016](https://arxiv.org/pdf/1611.05763v1.pdf)
 - [Prefrontal cortex as a meta-reinforcement learning system, 2018](https://www.biorxiv.org/content/biorxiv/early/2018/04/13/295964.full.pdf)
 
-Our results at reproducing the results from "Learning to Reinforcement Learn" as described in the arxiv pre-print are included in the notebook `arxiv.ipynb`.
+For a short explanation of the two-step task, see `two-step-task.ipynb`.
 
 ## Main Result
 
@@ -33,6 +33,8 @@ pip3 install -U -r requirements.txt
 ```
 
 ## Notebooks
+
+The results of our attempt at reproducing the results of "Learning to Reinforcement Learn" as described in the arxiv pre-print are included in the notebook `arxiv.ipynb`.
 
 For the implementation of the two-step task as descibed in "Prefrontal cortex as a meta-reinforcement learning system", we have included two different implementation:
 - The first one, in `biorxiv-first-try.ipynb` is an interpretation of the experiments where the LSTM is fed actions and rewards both from first and second stage. We saw that the convergence was much slower than in the paper, so we changed our approach.
