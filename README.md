@@ -4,11 +4,9 @@
 
 [![Run on FloydHub](https://img.shields.io/badge/Run%20on-FloydHub-blue.svg)](https://floydhub.com/run?template=https://github.com/mtrazzi/two-step-task)
 
-##### This the code for my article [Meta-Reinforcement Learning](https://blog.floydhub.com/author/michaeltrazzi/) on FloydHub.
+⚠ **Note**: This is the code for my article [Meta-Reinforcement Learning](https://blog.floydhub.com/author/michaeltrazzi/) on FloydHub. This repository is for the two-step task. For the Harlow task see [this repository](https://github.com/mtrazzi/harlow) instead.⚠
 
-⚠ **Note**: This repository is for the two-step task. For the harlow task see [this repository](https://github.com/mtrazzi/harlow) instead.⚠
-
-This repository presents our attempt at reproducing the simulations regarding the two-step task as described in the two papers:
+We reproduced the simulations regarding the two-step task as described in the two papers:
 - [Learning to Reinforcement Learn, Wang et al., 2016](https://arxiv.org/pdf/1611.05763v1.pdf)
 - [Prefrontal cortex as a meta-reinforcement learning system, Wang et al., 2018](https://www.biorxiv.org/content/biorxiv/early/2018/04/13/295964.full.pdf)
 
