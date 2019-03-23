@@ -31,8 +31,8 @@ Here is the side by side comparison of our results (on the left) with the result
 Clone this repository and install the other dependencies with `pip3`:
 
 ```
-git clone https://github.com/mtrazzi/Meta-RL.git
-cd Meta-RL
+git clone https://github.com/mtrazzi/two-step-task.git
+cd two-step-task
 pip3 install -U -r requirements.txt
 ```
 
