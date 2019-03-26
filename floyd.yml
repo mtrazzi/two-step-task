@@ -1,2 +1,2 @@
-env: tensorflow-1.7
+env: tensorflow-1.12
 machine: cpu
