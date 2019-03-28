@@ -12,6 +12,12 @@ We reproduced the simulations regarding the two-step task as described in the tw
 
 For a short explanation of the two-step task, see [`two-step-task.ipynb`](https://github.com/mtrazzi/two-step-task/blob/master/two-step-task.ipynb).
 
+## Discussion
+
+I answer questions and give more informations here:
+- [Hacker news](https://news.ycombinator.com/item?id=19503985)
+- [r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/b688id/p_reimplementing_deepminds_metarl_papers/)
+
 ## Main Result
 
 We reproduced the plot from [Prefrontal cortex as a meta-reinforcement learning system](https://www.biorxiv.org/content/biorxiv/early/2018/04/13/295964.full.pdf) (Simulation 4, Figure b), on the right). We launched n=8 trainings using different seeds, but with the same hyperparameters as the paper, to compare to the results obtained by Wang et al.
